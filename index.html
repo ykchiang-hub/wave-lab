@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WAVE Lab — Wave Analysis and Vibration Engineering at UNSW Canberra. Led by Dr. Yan Kei Chiang.">
+<title>WAVE Lab | Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="WAVE Lab home">
+      <svg class="nav__logomark" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+        <rect x="6.5" y="16.5" width="5" height="5" fill="#00C2D4" transform="rotate(45 9 19)"/>
+        <path d="M9,12 A7,7 0 0,1 9,26" stroke="#00C2D4" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M9,7 A12,12 0 0,1 9,31" stroke="#00C2D4" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+        <path d="M9,3 A16,16 0 0,1 9,35" stroke="#00C2D4" stroke-width="1.1" stroke-linecap="round" opacity=".28"/>
+      </svg>
+      <div class="nav__logotext">
+        <span class="nav__logoname">WAVE LAB</span>
+        <span class="nav__logosub">UNSW Canberra</span>
+      </div>
+    </a>
+    <ul class="nav__links" id="nav-links" role="list">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="collaborate.html" class="nav__cta">Join the Lab →</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero" id="home" aria-labelledby="hero-headline">
+  <canvas class="hero__canvas" id="wave-canvas" aria-hidden="true"></canvas>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="hero__content container">
+    <p class="hero__eyebrow">Wave Analysis and Vibration Engineering</p>
+    <h1 class="hero__headline" id="hero-headline">The Architecture<br>of <em>Sound and Wave.</em></h1>
+    <p class="hero__sub">WAVE Lab investigates the physics of wave propagation and vibration to develop innovative solutions for engineering challenges across acoustics, structural mechanics, and intelligent sensing. We engineer metamaterial structures that manipulate, sense, and decode acoustic signals — opening new frontiers in non-destructive testing, ultrasonic diagnostics, and wave-based intelligence.</p>
+    <div class="hero__tags" aria-label="Research themes">
+      <span class="hero__tag">Acoustic Metamaterials</span>
+      <span class="hero__tag">Wave-Based Sensing & Diagnositics</span>
+      <span class="hero__tag">Underwater Acoustics & Signal Processing</span>
+      <span class="hero__tag">Acoustic Levitation & Wave Manipulation</span>
+    </div>
+    <div class="hero__actions">
+      <a href="research.html" class="btn btn-primary">Explore Research</a>
+      <a href="publications.html" class="btn btn-secondary">Publications →</a>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scrollline"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════ SPLIT FEATURE ═══════════════════ -->
+<section aria-labelledby="feat-title">
+  <div class="splitfeat fu">
+    <div class="splitfeat__vis">
+      <img src="Home_diagram_L.png" alt="Wave focusing — Metamaterial diagram" style="width:1200%;height:800%;object-fit:contain;">
+    </div>
+    <div class="splitfeat__content">
+      <span class="splitfeat__accent" aria-hidden="true"></span>
+      <p class="section__label">How We Work</p>
+      <h2 class="section__title" id="feat-title">Structures that make<br>waves <em style="font-style:italic;color:var(--accent)">reveal themselves.</em></h2>
+      <p class="section__sub">Conventional sensors receive whatever signals arrive. We engineer the the structures through which waves propagate — enabling the wave itself to be filtered, focused, redirected, or encoded before it reaches the sensor. By embedding functionality into physical structures, we seek to transform the way information is generated, captured, and interpreted across a wide range of engineering applications.</p>
+      <ul class="splitfeat__list">
+        <li>Metagratings steer and focus acoustic energy to prescribed locations</li>        
+        <li>Engineered structures separate and encode wave information before detection</li>
+        <li>Advanced sensing reduces computational load through physics-based preprocessing</li>
+	<li>Energy confinement through wave-structure interaction</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <svg class="footer__brandmark" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+          <rect x="6.5" y="16.5" width="5" height="5" fill="#00C2D4" transform="rotate(45 9 19)"/>
+          <path d="M9,12 A7,7 0 0,1 9,26" stroke="#00C2D4" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M9,7 A12,12 0 0,1 9,31" stroke="#00C2D4" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+          <path d="M9,3 A16,16 0 0,1 9,35" stroke="#00C2D4" stroke-width="1.1" stroke-linecap="round" opacity=".28"/>
+        </svg>
+        <span class="footer__brandname">WAVE LAB · UNSW CANBERRA</span>
+      </div>
+      <p class="footer__copy">© 2026 WAVE Lab — School of Engineering and Technology</p>
+      <nav class="footer__links" aria-label="Footer links">
+	<a href="https://www.unsw.edu.au/staff/yan-kei-chiang" target="_blank" rel="noopener">Follow me</a>
+        <a href="https://www.researchgate.net/profile/Yan-Kei-Chiang/research" target="_blank" rel="noopener">ResearchGate</a>
+        <a href="publications.html">Publications</a>
+        <a href="mailto:y.chiang@unsw.edu.au">Contact</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+// ── WAVE CANVAS (home page only) ─────────────────────────
+(function () {
+  var canvas = document.getElementById('wave-canvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var W, H, animId;
+  function resize() { W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; }
+  resize();
+  window.addEventListener('resize', resize, { passive: true });
+  var waves = Array.from({ length: 22 }, function (_, i) {
+    var t = i / 21;
+    return {
+      yRatio: t,
+      freq:    0.0038 + (i % 5) * 0.0018 + Math.sin(i * 1.1) * 0.001,
+      amp:     7 + Math.abs(Math.sin(i * 0.8)) * 10,
+      speed:   0.007 + (i % 4) * 0.002,
+      phase:   i * 0.42,
+      opacity: 0.035 + Math.pow(1 - Math.abs(t - 0.5) * 2, 2) * 0.16,
+    };
+  });
+  var tick = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    waves.forEach(function (w) {
+      var y0 = w.yRatio * H;
+      ctx.beginPath();
+      for (var x = 0; x <= W; x += 4) {
+        var y = y0 + Math.sin(x * w.freq + tick * w.speed + w.phase) * w.amp;
+        if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = 'rgba(0,100,140,' + (w.opacity * 1.8) + ')';
+      ctx.lineWidth = 1.1;
+      ctx.stroke();
+    });
+    tick++;
+    animId = requestAnimationFrame(draw);
+  }
+  draw();
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) cancelAnimationFrame(animId); else draw();
+  });
+})();
+</script>
+</body>
+</html>
